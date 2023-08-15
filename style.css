@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Gothic';
+    src: url(./assets/fonts/CenturyGothic.ttf);
+}
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0px;
+}
+
+
+.mobile-dom-element {
+    display: none;
+}
+
+.showElementMenu-none {
+    display: none;
+}
+
+.showElementMenu {
+    transition: 1s;
+    background-color: rgba(#e34c10, alpha);
+    height: auto;
+    width: 100vw;
+}
+
+.showCategoryElement-none {
+    display: none;
+}
+
+.showCategoryElement {
+    transition: 1s;
+    height: auto;
+    width: 100vw;
+}
+
+.slider-1 {
+    background-image: url(./assets/carousel/carousel_img_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.slider-2 {
+    background-image: url(./assets/carousel/carousel_img_2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    display: grid;
+    place-items: center;
+}
+
+.slider-3 {
+    background-image: url(./assets/carousel/carousel_img_3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.inner-container {
+    height: 14vh;
+    width: 69vw;
+    background: white;
+    opacity: 0.8;
+}
+
+.boxes-1 {
+    background-image: url(./assets/img/boxes-1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 90vw;
+    /* height: 300px; // desktop size
+    width: 325px; //desktop size */
+    display: grid;
+    place-items: center;
+}
+
+.boxes-2 {
+    background-image: url(./assets/img/boxes-2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 90vw;
+    /* height: 300px; // desktop size
+    width: 325px; //desktop size */
+    display: grid;
+    place-items: center;
+}
+
+.boxes-3 {
+    background-image: url(./assets/img/boxes-3.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 90vw;
+    /* height: 300px; // desktop size
+    width: 325px; //desktop size */
+    display: grid;
+    place-items: center;
+}

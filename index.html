@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="h-auto w-full grid items-center justify-center overflow-x-hidden">
+        <!-- show when desktop breakpoint -->
+        <!-- <nav class="">
+
+        </nav> -->
+
+        <!-- show when mobile breakpoint -->
+        <nav class="xs:h-auto w-auto transition-all duration-75" id="mobile-dom-element">
+
+            <div class="bg-[#109DE3] xs:h-[9vh] w-[100vw] relative flex flex-row justify-start items-center">
+                <img class="h-[5vh] ml-3" src="./assets/img/logo.png" />
+
+                <button class="h-auto w-auto p-3 grid place-items-center absolute right-0 mr-[1vw]"
+                    id="toggle-hamburger">
+                    <i class="fa-solid fa-bars text-[1.30rem] text-white mt-[.5vh]"></i>
+                </button>
+            </div>
+
+            <div class="showElementMenu-none" id="show-element-toggle">
+                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex items-center justify-start">
+                    <!-- <img src="./assets/icons/key_icon.png" class="h-[1vh] mr-2" />  -->
+                    <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                        Login
+                    </span>
+                </button>
+                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex items-center justify-start">
+                    <!-- <img src="./assets/icons/wishlist_icon.png" class="h-[2vh] ml-3" /> -->
+                    <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                        My Wishlist
+                    </span>
+                </button>
+                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex flex-row items-center justify-start">
+                    <!-- <img src="./assets/icons/user_icon.png" class="h-[2vh] ml-3" /> -->
+                    <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                        My Account
+                    </span>
+                </button>
+                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex items-center justify-start">
+                    <!-- <img src="./assets/icons/cart_icon.png" class="h-[2vh] ml-2" /> -->
+                    <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                        My Cart
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- search bar -->
+        <section>
+            <div class="xs:h-[8vh] w-[100vw] flex items-center justify-center">
+                <div
+                    class="border-[#109DE3/0.8] border-2 h-[5.5vh] w-[82vw] rounded-[50px] flex flex-row items-center justify-center">
+                    <input class="xs:w-[62vw] outline-none text-md" placeholder="Find Anything from your home" />
+                    <img src="./assets/icons/search_icon.png" class="h-[2.5vh] ml-2" />
+                </div>
+                <img src="./assets/icons/cart_logo.png" class="h-[5vh] ml-2" />
+            </div>
+        </section>
+
+        <!-- line -->
+        <div class="bg-[#109DE3] xs:h-[1px] w-[100vw]"></div>
+
+        <!-- categories -->
+        <section>
+            <div class="bg-[#109DE3]  xs:h-[auto] w-[100vw] flex xs:flex-row flex-wrap" id="'show-category-toggle">
+                <div class="xs:h-[5vh] w-[100vw]  flex xs:flex-row flex-wrap relative">
+                    <span class="ml-3 text-white font-Poppins flex items-center justify-start">
+                        CATEGORIES
+                    </span>
+                    <button class="h-[5vh] w-[15vw] grid place-items-center absolute right-0" id="toggle-category">
+                        <img src="./assets/icons/arrow_down.png" class="xs:h-[1vh]" />
+                    </button>
+                </div>
+                <div class="showCategoryElement-none" id="show-category-toggle">
+                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                        <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                            Home
+                        </span>
+                    </button>
+                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                        <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                            Accent
+                        </span>
+                    </button>
+                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                        <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                            Bedroom
+                        </span>
+                    </button>
+                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                        <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                            Dining & Living Room
+                        </span>
+                    </button>
+                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                        <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
+                            Kids & Entertainment
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- carousel -->
+        </section>
+
+        <!-- carousel -->
+        <section>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slider-1">
+                            <div class="border-line-container">
+                                <div
+                                    class="border-white/75 border-[1px] xs:h-[25vh] xs:w-[80vw] grid place-items-center">
+                                    <div
+                                        class="bg-white/75 xs:h-[23vh] xs:w-[77vw] flex flex-col items-center justify-center gap-2 text-center">
+                                        <img src="./assets/asset/banner-text-1.png" class="xs:h-auto w-[60vw]" />
+                                        <img src="./assets/asset/banner-text-2.png" class="xs:h-auto w-[70vw]" />
+                                        <p class="font-Poppins text-[8px] pl-3 pr-3">Exclusive furniture packages to
+                                            suit
+                                            every
+                                            need.
+                                            Start from as
+                                            $00.00</p>
+                                        <button class="bg-[#ff005f] rounded h-[auto] w-[auto]">
+                                            <span class="text-white font-Poppins p-2 text-sm">
+                                                SHOP NOW
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-2">
+                            <div class="border-white/75 border-[1px] xs:h-[25vh] xs:w-[80vw] grid place-items-center">
+                                <div
+                                    class="bg-white/75 xs:h-[23vh] xs:w-[77vw] flex flex-col items-center justify-center gap-2 text-center">
+                                    <img src="./assets/asset/banner-text-1.png" class="xs:h-auto w-[60vw]" />
+                                    <img src="./assets/asset/banner-text-2.png" class="xs:h-auto w-[70vw]" />
+                                    <p class="font-Poppins text-[8px] pl-3 pr-3">Exclusive furniture packages to
+                                        suit
+                                        every
+                                        need.
+                                        Start from as
+                                        $00.00</p>
+                                    <button class="bg-[#ff005f] rounded h-[auto] w-[auto]">
+                                        <span class="text-white font-Poppins p-2 text-sm">
+                                            SHOP NOW
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-3">
+                            <div class="border-white/75 border-[1px] xs:h-[25vh] xs:w-[80vw] grid place-items-center">
+                                <div
+                                    class="bg-white/75 xs:h-[23vh] xs:w-[77vw] flex flex-col items-center justify-center gap-2 text-center">
+                                    <img src="./assets/asset/banner-text-1.png" class="xs:h-auto w-[60vw]" />
+                                    <img src="./assets/asset/banner-text-2.png" class="xs:h-auto w-[70vw]" />
+                                    <p class="font-Poppins text-[8px] pl-3 pr-3">Exclusive furniture packages to
+                                        suit
+                                        every
+                                        need.
+                                        Start from as
+                                        $00.00</p>
+                                    <button class="bg-[#ff005f] rounded h-[auto] w-[auto]">
+                                        <span class="text-white font-Poppins p-2 text-sm">
+                                            SHOP NOW
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- more than just a store -->
+        <section>
+            <div class="xs:h-[auto] w-[100vw] grid place-items-center mt-3 text-justify break-all pb-3">
+                <h1 class="font-Poppins font-bold xs:text-1xl p-3">MORE THAN JUST A STORE</h1>
+                <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
+                    <div class="bg-[#ff005f] xs:h-[2.5px] w-[70vw] absolute top-[-1px]">
+                    </div>
+                </div>
+                <p class="text-black font-Poppins text-[13.5px] pr-5 pl-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor libero vitae dolor imperdiet
+                    porta. Suspendisse consectetur diam et ipsum faucibus, in blandit augue ac-</p>
+            </div>
+        </section>
+
+        <section>
+            <div
+                class="xs:h-[auto] w-[100vw] flex xs:flex-row flex-wrap items-center justify-center mt-3 mb-5 pt-2 pb-2 gap-3">
+                <div class="boxes-1">
+                    <div class="border-white/75 border-[1px] xs:h-[38vh] w-[83vw] grid place-items-center">
+                        <div
+                            class="border-white/75 border-[2px] xs:h-[230px] w-[230px] rounded-full grid place-items-center">
+                            <div class="bg-white/75 xs:h-[210px] w-[210px] rounded-full grid place-items-center">
+                                <div class="h-[auto] w-[auto] grid place-items-center m-auto">
+                                    <img src="./assets/asset/send-the-gift-from-home-text.png"
+                                        class="xs:h-[17px] w-auto" />
+                                    <img src="./assets/asset/coupon-text.png" class="xs:h-[67px] w-auto mt-1" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes-2">
+                    <div class="border-white/75 border-[1px] xs:h-[38vh] w-[83vw] grid place-items-center">
+                        <div
+                            class="border-white/75 border-[2px] xs:h-[230px] w-[230px] rounded-full grid place-items-center">
+                            <div
+                                class="bg-white/75 xs:h-[210px] w-[210px] rounded-full grid place-items-center text-center break-all">
+                                <div class="h-[auto] w-[auto] grid place-items-center m-auto">
+                                    <img src="./assets/asset/visit-our-showroom-text.png"
+                                        class="xs:h-[16px] w-auto mt-1" />
+                                    <img src="./assets/asset/our-state-of-the-art-text.png"
+                                        class="xs:h-[13px] w-auto mt-1" />
+                                    <img src="./assets/asset/showroom-text.png" class="xs:h-[19px] w-auto mt-[1px]" />
+                                    <p class="font-Poppins text-black text-[10px] pr-7 pl-7 pt-2 leading-[10px]">
+                                        Our State-ofthe Art Furniture Showdown has Variety of major furnitures from all
+                                        your favorite brands
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes-3">
+                    <div class="border-white/75 border-[1px] xs:h-[38vh] w-[83vw] grid place-items-center">
+                        <div
+                            class="border-white/75 border-[2px] xs:h-[230px] w-[230px] rounded-full grid place-items-center text-center break-after-all">
+                            <div class="bg-white/75 xs:h-[210px] w-[210px] rounded-full grid place-items-center">
+                                <div class="h-[auto] w-[auto] grid place-items-center m-auto">
+                                    <img src="./assets/asset/save-energy.png" class="xs:h-[12px] w-auto mt-2" />
+                                    <img src="./assets/asset/save-text.png" class="xs:h-[14.5px] w-auto mt-[3px]" />
+                                    <img src="./assets/asset/enviroment-text.png" class="xs:h-[17px] w-auto mt-[3px]" />
+                                    <p class="font-Poppins text-black text-[10px] pr-8 pl-8 pt-2 leading-[10px]">
+                                        Green furniture and envi-romentally friendly
+                                        furnishing.
+                                        Organic cotton
+                                        and wood
+                                        from renewable sources.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+
+        <footer>
+
+        </footer>
+    </main>
+
+</body>
+<script src=" app.js">
+</script>
+
+</html>
