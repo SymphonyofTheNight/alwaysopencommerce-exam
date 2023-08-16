@@ -5,15 +5,15 @@ jQuery(document).ready(function () {
     $('.carousel').slick({
         dots: false,
         infinite: true,
-        speed: 300,
+        speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1920,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToScroll: 1,
                 }
             },
             {

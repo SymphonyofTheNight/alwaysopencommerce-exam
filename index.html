@@ -24,61 +24,139 @@
 
 <body>
     <main class="h-auto w-full grid items-center justify-center overflow-x-hidden">
-        <!-- show when desktop breakpoint -->
-        <!-- <nav class="">
 
-        </nav> -->
+        <!-- show when ipad to desktop breakpoint -->
+        <nav class="bg-[#109DE3] h-[5vh] w-[100vw] flex flex-row items-center justify-evenly" id="deskop-nav-element">
+            <div class="h-[5vh] w-[28vw] relative flex">
+                <ul class="flex gap-3">
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/home_icon.png" class="mr-1 h-[11px]" /> Home
+                        </button>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/icon_message.png" class="mr-1 h-[11px]" /> Blog
+                        </button>
+                    </li>
+                </ul>
+                <ul class="flex absolute right-0 gap-3">
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/location_icon.png" class="mr-2 h-[11px]" /> Track my Order
+                        </button>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/help_icon.png" class="mr-1 h-[11px]" /> Help
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="h-[5vh] w-auto relative flex">
+                <ul class="flex gap-4">
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/key_icon.png" class="mr-1 h-[5px]" /> Login
+                        </button>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/wishlist_icon.png" class="mr-1 h-[11px]" /> My Wishlist
+                        </button>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/user_icon.png" class="mr-2 h-[11px]" /> My Account
+                        </button>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <button class="h-[5vh] w-auto p-2 text-white text-sm flex flex-row items-center">
+                            <img src="./assets/icons/cart_icon.png" class="mr-1 h-[11px]" /> My Cart <img
+                                src="./assets/icons/arrow_down.png" class="h-[5px] ml-2 mt-[1px]" />
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <!-- show when mobile breakpoint -->
+        <!-- show when ipad down to mobile breakpoint -->
         <nav class="xs:h-auto w-auto transition-all duration-75" id="mobile-dom-element">
 
-            <div class="bg-[#109DE3] xs:h-[9vh] w-[100vw] relative flex flex-row justify-start items-center">
-                <img class="h-[5vh] ml-3" src="./assets/img/logo.png" />
+            <!-- logo and hambuger container -->
+            <div class="bg-[#109DE3] xs:h-[9vh] sm:h-[5vh] w-[100vw] relative flex flex-row justify-start items-center">
+                <img class="h-[5vh] sm:h-[3vh] ml-3" src="./assets/img/logo.png" />
 
+                <!-- btn toggle for top mobile-navigation -->
                 <button class="h-auto w-auto p-3 grid place-items-center absolute right-0 mr-[1vw]"
                     id="toggle-hamburger">
                     <i class="fa-solid fa-bars text-[1.30rem] text-white mt-[.5vh]"></i>
                 </button>
             </div>
 
+            <!-- show when toggle mobile nav -->
             <div class="showElementMenu-none" id="show-element-toggle">
-                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex items-center justify-start">
+                <button class="bg-[#109DE3] h-[6vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                     <!-- <img src="./assets/icons/key_icon.png" class="h-[1vh] mr-2" />  -->
                     <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                         Login
                     </span>
                 </button>
-                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex items-center justify-start">
+                <button class="bg-[#109DE3] h-[6vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                     <!-- <img src="./assets/icons/wishlist_icon.png" class="h-[2vh] ml-3" /> -->
                     <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                         My Wishlist
                     </span>
                 </button>
-                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex flex-row items-center justify-start">
+                <button class="bg-[#109DE3] h-[6vh] sm:h-[4vh] w-[100vw] flex flex-row items-center justify-start">
                     <!-- <img src="./assets/icons/user_icon.png" class="h-[2vh] ml-3" /> -->
                     <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                         My Account
                     </span>
                 </button>
-                <button class="bg-[#109DE3] h-[6vh] w-[100vw] flex items-center justify-start">
+                <button class="bg-[#109DE3] h-[6vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                     <!-- <img src="./assets/icons/cart_icon.png" class="h-[2vh] ml-2" /> -->
                     <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                         My Cart
                     </span>
                 </button>
             </div>
+
         </nav>
 
-        <!-- search bar -->
+        <!-- search bar show when mobile only -->
         <section>
-            <div class="xs:h-[8vh] w-[100vw] flex items-center justify-center">
+
+            <!-- desktop search bar with logo -->
+            <div class="h-[11vh] w-[100vw] grid place-items-center" id="desktop-search-bar/logo-element">
+                <div class="h-[11vh] w-[72vw] relative flex flex-row flex-wrap">
+                    <div class="h-[11vh] w-[auto] flex items-center justify-start">
+                        <img src="./assets/img/logo.png" class="h-auto w-[16vw] ml-2" />
+                    </div>
+                    <div class="h-[11vh] w-[auto] absolute right-0 flex items-center justify-center">
+                        <div
+                            class="rounded-[50px] border-[#109DE3/0.8] border-3 h-[5.5vh] w-[25vw] flex items-center justify-center">
+                            <input class="bg-transparent outline-none p-2 h-[4.5vh] w-[20vw] font-Poppins"
+                                placeholder="Find Anything from your home" />
+                            <img src="./assets/icons/search_icon.png" class="h-[3vh] ml-2" />
+                        </div>
+                        <img src="./assets/icons/cart_logo.png" class="h-[5.5vh] ml-2" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile search bar -->
+            <div class="xs:h-[8vh] sm:h-[6vh] w-[100vw] flex items-center justify-center"
+                id="mobile-search-bar-element">
                 <div
-                    class="border-[#109DE3/0.8] border-2 h-[5.5vh] w-[82vw] rounded-[50px] flex flex-row items-center justify-center">
-                    <input class="xs:w-[62vw] outline-none text-md" placeholder="Find Anything from your home" />
+                    class="border-[#109DE3/0.8] border-2 h-[5.5vh] sm:h-[3.5vh] xs:w-[82vw] sm:w-[91vw] rounded-[50px] flex flex-row items-center justify-center">
+                    <input class="xs:w-[62vw] sm:w-[75vw] sm:h-[3vh] outline-none text-md"
+                        placeholder="Find Anything from your home" />
                     <img src="./assets/icons/search_icon.png" class="h-[2.5vh] ml-2" />
                 </div>
-                <img src="./assets/icons/cart_logo.png" class="h-[5vh] ml-2" />
+                <img src="./assets/icons/cart_logo.png" class="h-[5vh] sm:h-[3.3vh] ml-2" />
             </div>
+
         </section>
 
         <!-- line -->
@@ -86,120 +164,94 @@
 
         <!-- categories -->
         <section>
-            <div class="bg-[#109DE3]  xs:h-[auto] w-[100vw] flex xs:flex-row flex-wrap" id="'show-category-toggle">
-                <div class="xs:h-[5vh] w-[100vw]  flex xs:flex-row flex-wrap relative">
+            <!-- show when Desktop breakpoint -->
+            <div class="h-[6vh] w-[100vw] grid place-items-center" id="desktop-categories">
+                <div class="h-[6vh] w-[71vw] flex flex-row flex-wrap items-center justify-start">
+                    <button
+                        class="h-[6vh] w-[11vw] text-black/75 font-Poppins text-md hover:bg-[#109DE3] hover:text-white">
+                        HOME
+                    </button>
+                    <button
+                        class="group h-[6vh] flex items-center justify-center w-[14vw] text-black/75 font-Poppins text-md hover:bg-[#109DE3] hover:text-white">
+                        ACCENT <i class="fa-solid fa-chevron-down ml-2 group-hover:text-white "></i>
+                    </button>
+                    <button
+                        class="group h-[6vh] flex items-center justify-center w-[14vw] text-black/75 font-Poppins text-md hover:bg-[#109DE3] hover:text-white">
+                        BEDROOM <i class="fa-solid fa-chevron-down ml-2 group-hover:text-white"></i>
+                    </button>
+                    <button
+                        class="group h-[6vh] flex items-center justify-center w-[16vw] text-black/75 font-Poppins text-md hover:bg-[#109DE3] hover:text-white">
+                        DINING & LIVING ROOM <i class="fa-solid fa-chevron-down ml-2 group-hover:text-white"></i>
+                    </button>
+                    <button
+                        class="group h-[6vh] flex items-center justify-center w-[16vw] text-black/75 font-Poppins text-md hover:bg-[#109DE3] hover:text-white">
+                        KIDS & ENTERTAINMENT <i class="fa-solid fa-chevron-down ml-2 group-hover:text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- hide when ipad to desktop breakpoint -->
+            <div class="bg-[#109DE3] xs:h-[auto] w-[100vw] flex xs:flex-row flex-wrap" id="mobile-categories">
+                <div class="xs:h-[5vh] sm:h-[4vh] w-[100vw]  flex xs:flex-row flex-wrap relative">
                     <span class="ml-3 text-white font-Poppins flex items-center justify-start">
                         CATEGORIES
                     </span>
-                    <button class="h-[5vh] w-[15vw] grid place-items-center absolute right-0" id="toggle-category">
-                        <img src="./assets/icons/arrow_down.png" class="xs:h-[1vh]" />
+                    <button class="h-[5vh] ssm:h-[4vh] w-[15vw] grid place-items-center absolute right-0"
+                        id="toggle-category">
+                        <img src="./assets/icons/arrow_down.png" class="xs:h-[1vh] sm:h-[5px] sm:mb-1" />
                     </button>
                 </div>
                 <div class="showCategoryElement-none" id="show-category-toggle">
-                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                    <button class="bg-[#109DE3] xs:h-[5vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                         <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                             Home
                         </span>
                     </button>
-                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                    <button class="bg-[#109DE3] xs:h-[5vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                         <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                             Accent
                         </span>
                     </button>
-                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                    <button class="bg-[#109DE3] xs:h-[5vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                         <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                             Bedroom
                         </span>
                     </button>
-                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                    <button class="bg-[#109DE3] xs:h-[5vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                         <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                             Dining & Living Room
                         </span>
                     </button>
-                    <button class="bg-[#109DE3] xs:h-[5vh] w-[100vw] flex items-center justify-start">
+                    <button class="bg-[#109DE3] xs:h-[5vh] sm:h-[4vh] w-[100vw] flex items-center justify-start">
                         <span class="ml-3 text-white font-Poppins flex flex-row items-center justify-start">
                             Kids & Entertainment
                         </span>
                     </button>
                 </div>
-
             </div>
-
-            <!-- carousel -->
         </section>
 
-        <!-- carousel -->
+        <!-- banner -->
         <section>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="slider-1">
-                            <div class="border-line-container">
-                                <div
-                                    class="border-white/75 border-[1px] xs:h-[25vh] xs:w-[80vw] grid place-items-center">
-                                    <div
-                                        class="bg-white/75 xs:h-[23vh] xs:w-[77vw] flex flex-col items-center justify-center gap-2 text-center">
-                                        <img src="./assets/asset/banner-text-1.png" class="xs:h-auto w-[60vw]" />
-                                        <img src="./assets/asset/banner-text-2.png" class="xs:h-auto w-[70vw]" />
-                                        <p class="font-Poppins text-[8px] pl-3 pr-3">Exclusive furniture packages to
-                                            suit
-                                            every
-                                            need.
-                                            Start from as
-                                            $00.00</p>
-                                        <button class="bg-[#ff005f] xs:h-[5vh] xs:w-[180px] rounded h-[auto] w-[auto]">
-                                            <span class="text-white font-Poppins p-2 text-sm">
-                                                SHOP NOW
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="slider-2">
-                            <div class="border-white/75 border-[1px] xs:h-[25vh] xs:w-[80vw] grid place-items-center">
-                                <div
-                                    class="bg-white/75 xs:h-[23vh] xs:w-[77vw] flex flex-col items-center justify-center gap-2 text-center">
-                                    <img src="./assets/asset/banner-text-1.png" class="xs:h-auto w-[60vw]" />
-                                    <img src="./assets/asset/banner-text-2.png" class="xs:h-auto w-[70vw]" />
-                                    <p class="font-Poppins text-[8px] pl-3 pr-3">Exclusive furniture packages to
-                                        suit
-                                        every
-                                        need.
-                                        Start from as
-                                        $00.00</p>
-                                    <button class="bg-[#ff005f] xs:h-[5vh] xs:w-[180px] rounded h-[auto] w-[auto]">
-                                        <span class="text-white font-Poppins p-2 text-sm">
-                                            SHOP NOW
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="slider-3">
-                            <div class="border-white/75 border-[1px] xs:h-[25vh] xs:w-[80vw] grid place-items-center">
-                                <div
-                                    class="bg-white/75 xs:h-[23vh] xs:w-[77vw] flex flex-col items-center justify-center gap-2 text-center">
-                                    <img src="./assets/asset/banner-text-1.png" class="xs:h-auto w-[60vw]" />
-                                    <img src="./assets/asset/banner-text-2.png" class="xs:h-auto w-[70vw]" />
-                                    <p class="font-Poppins text-[8px] pl-3 pr-3">Exclusive furniture packages to
-                                        suit
-                                        every
-                                        need.
-                                        Start from as
-                                        $00.00</p>
-                                    <button class="bg-[#ff005f] xs:h-[5vh] xs:w-[180px] rounded h-[auto] w-[auto]">
-                                        <span class="text-white font-Poppins p-2 text-sm">
-                                            SHOP NOW
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+            <div class="bg-blue-700 xs:h-[35vh] w-[100vw] sm:h-[400px] grid place-items-center banner">
+                <div
+                    class="border-white/75 border-[1px] xs:h-[25vh] xs:w-[80vw] sm:h-[290px] sm:w-[655px] grid place-items-center">
+                    <div
+                        class="bg-white/75 xs:h-[23vh] xs:w-[77vw] sm:h-[275px] sm:w-[640px] flex flex-col items-center justify-center gap-2 text-center">
+                        <img src="./assets/asset/banner-text-1.png" class="xs:h-auto w-[60vw] sm:w-[200px]" />
+                        <img src="./assets/asset/banner-text-2.png" class="xs:h-auto w-[70vw] sm:w-[400px]" />
+                        <p class="font-Poppins xs:text-[8px] sm:text-sm pl-3 pr-3">Exclusive furniture packages to
+                            suit
+                            every
+                            need.
+                            Start from as
+                            $00.00</p>
+                        <button
+                            class="bg-[#ff005f] xs:h-[27px] sss:h-[37px] sm:h-[37px] xs:w-[180px] sm:w-[150px] rounded h-[auto] w-[auto] sm:mt-1">
+                            <span class="text-white font-Poppins p-2 text-sm">
+                                SHOP NOW
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -210,10 +262,11 @@
             <div class="xs:h-[auto] w-[100vw] grid place-items-center mt-3 text-justify break-all pb-3">
                 <h1 class="font-Poppins font-bold xs:text-1xl p-3">MORE THAN JUST A STORE</h1>
                 <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
-                    <div class="bg-[#ff005f] xs:h-[2.5px] w-[70vw] absolute top-[-1px]">
+                    <div
+                        class="bg-[#ff005f] xs:h-[2.5px] sm:h-[4.5px] w-[70vw] sm:w-[125px] absolute top-[-1px] sm:top-[-3px]">
                     </div>
                 </div>
-                <p class="text-black font-Poppins text-[13.5px] pr-5 pl-5">
+                <p class="text-black font-Poppins text-[13.5px] sm:text-[0.6em] sm:text-center pr-5 pl-5 sm:w-[465px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor libero vitae dolor imperdiet
                     porta. Suspendisse consectetur diam et ipsum faucibus, in blandit augue ac-</p>
             </div>
@@ -223,8 +276,9 @@
         <section>
             <div
                 class="xs:h-[auto] w-[100vw] flex xs:flex-row flex-wrap items-center justify-center mt-3 mb-5 pt-2 pb-2 gap-3">
-                <div class="boxes-1">
-                    <div class="border-white/75 border-[1px] xs:h-[38vh] w-[83vw] grid place-items-center">
+                <div class="boxes-1 xs:h-[40vh] xs:w-[90vw] sm:h-[340px] sm:w-[350px]">
+                    <div
+                        class="border-white/75 border-[1px] xs:h-[38vh] sm:h-[330px] w-[83vw] sm:w-[330px] grid place-items-center">
                         <div
                             class="border-white/75 border-[2px] xs:h-[230px] w-[230px] rounded-full grid place-items-center">
                             <div class="bg-white/75 xs:h-[210px] w-[210px] rounded-full grid place-items-center">
@@ -237,8 +291,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxes-2">
-                    <div class="border-white/75 border-[1px] xs:h-[38vh] w-[83vw] grid place-items-center">
+                <div class="boxes-2 xs:h-[40vh] xs:w-[90vw] sm:h-[340px] sm:w-[350px]">
+                    <div
+                        class="border-white/75 border-[1px] xs:h-[38vh] sm:h-[330px] w-[83vw] sm:w-[330px] grid place-items-center">
                         <div
                             class="border-white/75 border-[2px] xs:h-[230px] w-[230px] rounded-full grid place-items-center">
                             <div
@@ -258,8 +313,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxes-3">
-                    <div class="border-white/75 border-[1px] xs:h-[38vh] w-[83vw] grid place-items-center">
+                <div class="boxes-3 xs:h-[40vh] xs:w-[90vw] sm:h-[340px] sm:w-[350px]">
+                    <div
+                        class="border-white/75 border-[1px] xs:h-[38vh] sm:h-[330px] w-[83vw] sm:w-[330px] grid place-items-center">
                         <div
                             class="border-white/75 border-[2px] xs:h-[230px] w-[230px] rounded-full grid place-items-center text-center break-after-all">
                             <div class="bg-white/75 xs:h-[210px] w-[210px] rounded-full grid place-items-center">
@@ -289,7 +345,7 @@
                 <h1 class="font-Poppins font-bold xs:text-1xl md:text-3xl p-3">SHOP BY CATEGORIES</h1>
                 <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
                     <div
-                        class="bg-[#ff005f] xs:h-[2.5px] md:h-[4.5px] xs:w-[70vw] md:w-[14vw] absolute top-[-1px] md:top-[-3px]">
+                        class="bg-[#ff005f] xs:h-[2.5px] sm:h-[4.5px] w-[70vw] sm:w-[125px] absolute top-[-1px] sm:top-[-3px]">
                     </div>
                 </div>
                 <div
@@ -319,7 +375,7 @@
                 <h1 class="font-Poppins font-bold xs:text-1xl md:text-3xl p-3">SHOP NEW & HOT DEALS PRODUCTS</h1>
                 <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
                     <div
-                        class="bg-[#ff005f] xs:h-[2.5px] md:h-[4.5px] xs:w-[70vw] md:w-[14vw] absolute top-[-1px] md:top-[-3px]">
+                        class="bg-[#ff005f] xs:h-[2.5px] sm:h-[4.5px] w-[70vw] sm:w-[125px] absolute top-[-1px] sm:top-[-3px]">
                     </div>
                 </div>
                 <p class="text-black font-Poppins text-[13.5px] pr-5 pl-5 break-all">
@@ -330,7 +386,7 @@
         <!-- items -->
         <section>
             <div class="h-auto w-[100vw] grid place-items-center mb-3 mt-3">
-                <div class="h-auto w-[80vw] carousel">
+                <div class="h-auto w-[80vw] relative carousel">
                     <div class="h-[auto] w-[370px]">
                         <div
                             class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
@@ -351,11 +407,44 @@
                                     <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
                                 </div>
                             </button>
+                            <!--group hover bg-[#109DE3]-->
+                            <div
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-2.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
                             <!--group hover-->
                             <div
-                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
                                 <button
-                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
                                     <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
                                     <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
                                         ADD TO CART
@@ -386,9 +475,108 @@
                             </button>
                             <!--group hover-->
                             <div
-                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
                                 <button
-                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-3.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-4.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-4.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
                                     <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
                                     <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
                                         ADD TO CART
@@ -419,9 +607,9 @@
                             </button>
                             <!--group hover-->
                             <div
-                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
                                 <button
-                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
                                     <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
                                     <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
                                         ADD TO CART
@@ -433,7 +621,7 @@
                     <div class="h-[auto] w-[370px]">
                         <div
                             class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
-                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
+                            <img src="./assets/items/item-2.jpg" class="h-auto w-full" />
                             <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
                                 100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
                             </p>
@@ -452,75 +640,9 @@
                             </button>
                             <!--group hover-->
                             <div
-                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                class="border-[#109DE3] border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
                                 <button
-                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
-                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
-                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
-                                        ADD TO CART
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="h-[auto] w-[370px]">
-                        <div
-                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
-                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
-                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
-                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
-                            </p>
-                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
-                            <button
-                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
-                                <span class="font-Poppins text-black/75 text-sm ml-2">
-                                    Price
-                                </span>
-                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
-                                    $400.00
-                                </p>
-                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
-                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
-                                </div>
-                            </button>
-                            <!--group hover-->
-                            <div
-                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
-                                <button
-                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
-                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
-                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
-                                        ADD TO CART
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="h-[auto] w-[370px]">
-                        <div
-                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
-                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
-                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
-                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
-                            </p>
-                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
-                            <button
-                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
-                                <span class="font-Poppins text-black/75 text-sm ml-2">
-                                    Price
-                                </span>
-                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
-                                    $400.00
-                                </p>
-                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
-                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
-                                </div>
-                            </button>
-                            <!--group hover-->
-                            <div
-                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
-                                <button
-                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    class="bg-[#109DE3] h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
                                     <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
                                     <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
                                         ADD TO CART
@@ -531,28 +653,45 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="bg-red-700 h-[auto] w-[100vw] flex justify-start relative ">
-                <button class="prev px-4 py-2 bg-gray-400">Previous</button>
-                <button class="next px-4 py-2 bg-gray-400 absolute right-0">Next</button>
-            </div> -->
+            <div class="h-auto w-[100vw] grid place-items-center">
+                <div class="w-[76vw] h-auto relative">
+                    <button class="bg-transparent h-[50px] w-[50px] grid place-items-center prev">
+                        <i class="fa-solid fa-arrow-left text-black"></i>
+                    </button>
+                    <button
+                        class="bg-transparent h-[50px] w-[50px] grid place-items-center absolute right-0 top-0 next">
+                        <i class="fa-solid fa-arrow-right text-black"></i>
+                    </button>
+                </div>
+                <!-- <button class="prev px-4 py-2 bg-gray-400">Previous</button>
+                <button class="next px-4 py-2 bg-gray-400 absolute right-0">Next</button> -->
+            </div>
         </section>
 
         <!-- parallax -->
         <section>
-            <div class="bg-red-700 xs:h-[40vh] w-[100vw] grid place-items-center mt-5 mb-5 parallax">
-                <div class="border-white/75 border-[2px] xs:h-[35vh] xs:w-[80vw] grid place-items-center">
-                    <div class="border-white/75 border-[1px] xs:h-[33vh] xs:w-[75vw] grid place-items-center">
-                        <div class="bg-white/75 xs:h-[30vh] xs:w-[70vw] grid place-items-center text-justify break-all">
+            <div class="bg-red-700 xs:h-[40vh] sm:h-[450px] w-[100vw] grid place-items-center mt-5 mb-5 parallax">
+                <div
+                    class="border-white/75 border-[2px] xs:h-[35vh] xs:w-[80vw] sm:h-[325px] sm:w-[730px] grid place-items-center">
+                    <div
+                        class="border-white/75 border-[1px] xs:h-[33vh] xs:w-[75vw] sm:h-[305px] sm:w-[710px] grid place-items-center">
+                        <div
+                            class="bg-white/75 xs:h-[30vh] xs:w-[70vw] sm:h-[285px] sm:w-[690px] grid place-items-center text-justify sm:text-center break-all">
                             <div class="h-auto w-auto grid place-items-center">
-                                <img src="./assets/parallax/home-decors-text.png" class="h-auto xs:w-[180px]" />
-                                <p class="font-Poppins text-black/75 xs:text-[10px] pr-5 pl-5 mt-2">
+                                <img src="./assets/parallax/home-decors-text.png"
+                                    class="h-auto xs:w-[180px] sm:w-[400px] sm:mb-2" />
+                                <p
+                                    class="font-Poppins text-black/75 xs:text-[10px] sm:text-sm pr-5 pl-5 mt-1 sss:mt-3 sss:w-[60vw] sm:w-[450px]">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quae ullam,
                                     quia
                                     porro, odit repudiandae suscipit tenetur dolor unde adipisci fugiat blanditiis
+                                    Doloremque, quae ullam
                                 </p>
                                 <button
-                                    class="bg-[#fca41e] xs:h-[5vh] xs:w-[180px] grid place-items-center rounded mt-2">
-                                    <span class="text-white text-md font-Poppins">SHOP NOW</span>
+                                    class="bg-[#fca41e] xs:h-[27px] sss:h-[37px] sm:h-[37px] xs:w-[180px] sm:w-[150px] rounded h-[auto] w-[auto] mt-1 sss:mt-3 sm:mt-4">
+                                    <span class="text-white font-Poppins p-2 text-sm">
+                                        SHOP NOW
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -561,11 +700,11 @@
             </div>
         </section>
 
-        <!-- recent tips -->
+        <!-- recent tips  #fca41e -->
         <section>
             <div class="xs:h-[auto] w-[100vw] grid place-items-center mt-3 text-justify break-all pb-3">
                 <h1 class="font-Poppins font-bold xs:text-1xl md:text-3xl p-3">RECENT TIPS / ARTICLES</h1>
-                <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
+                <div class="bg-[#ff005f] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
                     <div
                         class="bg-[#ff005f] xs:h-[2.5px] md:h-[4.5px] xs:w-[70vw] md:w-[14vw] absolute top-[-1px] md:top-[-3px]">
                     </div>
@@ -640,165 +779,189 @@
         </section>
 
         <!-- footer -->
-        <footer class="h-auto w-[100vw] relative mt-[20vh]">
+        <footer class="h-auto w-[100vw] relative mt-[12vh]">
+
             <img src="./assets/footer/footer_roof_logo.png"
-                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 xs:top-[-30px] left-50 xs:h-[60px]" />
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 xs:top-[-30px] sss:top-[-25px] left-50 xs:h-[60px]" />
+
             <div class="bg-[#109DE3] xs:h-auto w-[100vw] flex flex-row flex-wrap justify-center">
-                <div class="bg-[#109DE3] xs:h-[50px] w-[85vw] flex items-center justify-center">
-                    <img src="./assets/footer/envelope-icon.png" class="h-auto xs:w-[30px] mr-2" />
-                    <p class="font-Poppins text-white">SIGN UP FOR OUR NEWSLETTER</p>
+                <div
+                    class="bg-[#109DE3] xs:h-[50px] w-[85vw] sm:h-[80px] sm:w-[50vw] flex items-center xs:justify-center sm:justify-end">
+                    <img src="./assets/footer/envelope-icon.png" class="h-auto xs:w-[30px] mr-2 md:mr-5" />
+                    <p class="font-Poppins text-white sm:mr-[50px] md:mr-[100px]">SIGN UP FOR OUR NEWSLETTER</p>
                 </div>
-                <div class="bg-[#109DE3] xs:h-auto w-[100vw] flex flex-row flex-wrap items-center justify-center">
-                    <input class="h-[40px] xs:w-[85vw] p-4 outline-none font-Poppins text-gray-700/75"
+                <div
+                    class="bg-[#109DE3] xs:h-auto w-[100vw] sm:h-[80px] sm:w-[50vw] flex flex-row flex-wrap items-center xs:justify-center sm:justify-start">
+                    <input
+                        class="xs:h-[40px] xs:w-[85vw] sm:h-[30px] sm:w-[230px] md:w-[270px] xs:p-4 sm:p-0 sm:pl-2 outline-none font-Poppins text-gray-700/75"
                         placeholder="Email Address" />
-                    <button class="bg-[#fca41e] xs:h-[30px] xs:w-[85vw] grid place-items-center rounded mt-2 mb-3">
-                        <span class="text-white text-md font-Poppins">SUBSCRIBE</span>
+                    <button
+                        class="bg-[#fca41e] xs:w-[85vw] sm:h-[30px] sss:h-[50px] sm:w-auto sm:ml-2 pr-5 pl-5 xs:mt-2 xs:mb-2 text-base text-white font-Poppins">
+                        SUBSCRIBE
                     </button>
                 </div>
             </div>
-            <div class="h-auto w-[100vw] mt-4">
-                <div class="bg-white h-auto w-[100vw] grid place-items-center mb-3">
-                    <img src="./assets/img/logo.png" class="h-auto xs:w-[240px] pt-4 pb-2" />
-                    <p class="font-Poppins text-black/75 text-justify xs:text-base w-[85vw] break-all">
-                        At Home Buys Plus, we're not just about selling Furnitures Sure, as the Florida's
-                        number 1 Furniture store we do have one of the most exclusive collections of Furniture styles
-                        available online, but with our wide selection of products from mattresses to Fire Places, we
-                        cater to your entire furniture needs - and all at great value bargain prices!
-                    </p>
-                </div>
-                <div class="bh-auto w-[100vw] grid place-items-center mt-5 mb-[2vh]">
-                    <div class="bh-[20vh] w-[85vw]">
-                        <h1 class="text-[#109DE3] font-bold font-Poppins text-xl">SHOP BY</h1>
-                        <ul class="mt-1">
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Accents
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Bedroom
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Dining & Living Room
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Kids & Entertainment
-                                </a>
-                            </li>
-                        </ul>
+
+            <div class="sm:h-[240px] md:h-[320px] sm:w-[100vw] sm:flex flex-row flex-wrap items-center justify-center">
+                <div
+                    class="sm:h-[230px] md:h-[280px] sm:w-[95vw] lg:w-[80vw] xs:flex sm:flex flex-row flex-wrap items-center justify-center">
+                    <div
+                        class="sm:h-[200px] md:h-[250px] sm:w-[22vw] md:w-[240px] grid items-start justify-center xs:mt-4 sm:mt-0">
+                        <div class="sm:mt-2 relative">
+                            <img src="./assets/img/logo.png" class="h-auto xs:w-[85vw] sm:w-[150px] md:w-[205px]" />
+                            <p
+                                class="font-Poppins text-black/75 text-justify xs:text-base sm:text-[8px] md:text-[10px] xs:w-[85vw] sm:w-[150px] md:w-[205px] xs:mt-2 sm:mt-3 break-all">
+                                At Home Buys Plus, we're not just about selling Furnitures Sure, as the Florida's
+                                number 1 Furniture store we do have one of the most exclusive collections of Furniture
+                                styles
+                                available online, but with our wide selection of products from mattresses to Fire
+                                Places, we
+                                cater to your entire furniture needs - and all at great value bargain prices!
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="bh-auto w-[100vw] grid place-items-center mt-4 mb-[2vh]">
-                    <div class="bh-[20vh] w-[85vw]">
-                        <h1 class="text-[#109DE3] font-bold font-Poppins text-xl">INFORMATION & SUPPORT</h1>
-                        <ul class="mt-1">
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Delivery Details
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Return Policy
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    About us
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Terms & Conditions
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    My Account
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    FAQ
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                        </ul>
+                    <div
+                        class="footer-blog sm:h-[200px] md:h-[250px] sm:w-[180px] md:w-[180px] xs:w-[100vw] xs:mt-4 sm:mt-0 xs:mb-2 sm:mb-0 xs:flex sm:grid items-start justify-center">
+                        <div class="xs:w-[85vw] sm:w-auto sm:mt-2">
+                            <h1 class="text-[#109DE3] font-bold font-Poppins xs:text-xl sm:text-sm">SHOP BY</h1>
+                            <ul class="mt-1 w-auto h-auto sm:leading-[15px] md:leading-normal">
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Accents
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Bedroom
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Dining & Living Room
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Kids & Entertainment
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="bh-auto w-[100vw] grid place-items-center mt-4 mb-[2vh]">
-                    <div class="bh-[20vh] w-[85vw]">
-                        <h1 class="text-[#109DE3] font-bold font-Poppins text-xl">CUSTOMER SERVICE</h1>
-                        <ul class="mt-1">
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    About Us
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Delivery
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Sign Up for Emails
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Deal Match
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Financing
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    FAQs
-                                </a>
-                            </li>
-                            <li class="custom-bullet">
-                                <a class="font-Poppins text-black/75">
-                                    Order and Returns
-                                </a>
-                            </li>
-                        </ul>
+                    <div
+                        class="footer-blog sm:h-[200px] md:h-[250px] sm:w-[180px] md:w-[220px] xs:w-[100vw] xs:mt-4 sm:mt-0 xs:mb-2 sm:mb-0 xs:flex sm:grid items-start justify-center">
+                        <div class="xs:w-[85vw] sm:w-auto sm:mt-2">
+                            <h1 class="text-[#109DE3] font-bold font-Poppins xs:text-xl sm:text-sm">INFORMATION &
+                                SUPPORT</h1>
+                            <ul class="mt-1 w-auto h-auto sm:leading-[15px] md:leading-normal">
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Delivery Details
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Return Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        My Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="footer-blog sm:h-[200px] md:h-[250px] sm:w-[180px] md:w-[200px] xs:w-[100vw] xs:mt-4 sm:mt-0 xs:mb-2 sm:mb-0 xs:flex sm:grid items-start justify-center">
+                        <div class="xs:w-[85vw] sm:w-auto sm:mt-2">
+                            <h1 class="text-[#109DE3] font-bold font-Poppins sm:text-sm">CUSTOMER SERVICE</h1>
+                            <ul class="mt-1 sm:leading-[15px] md:leading-normal">
+                                <li>
+                                    <a class=" font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Delivery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Sign Up for Emails
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Deal Match
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Financing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-Poppins text-black/75 sm:text-[0.7rem]">
+                                        Order and Returns
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-[#109DE3] xs:h-auto w-[100vw] flex xs:flex-col flex-wrap justify-center">
-                <div class="xs:h-[50px] w-[100vw] flex flex-row xs:items-end justify-center gap-2">
-                    <button class="h-auto w-auto p-1">
+
+            <div
+                class="bg-[#109DE3] xs:h-auto w-[100vw] flex xs:flex-col sm:flex-row-reverse flex-wrap xs:justify-center sm:justify-between">
+                <div
+                    class="xs:h-[50px] xs:w-[100vw] sm:w-[50vw] flex flex-row xs:items-end sm:items-center justify-center gap-2">
+                    <button class="h-auto w-auto xs:p-1 sm:p-0">
                         <img src="./assets/footer/facebook-logo.png" class="h-auto w-[30px]" />
                     </button>
-                    <button class="h-auto w-auto p-1">
+                    <button class="h-auto w-auto xs:p-1 sm:p-0">
                         <img src="./assets/footer/tweeter-logo.png" class="h-auto w-[30px]" />
                     </button>
-                    <button class="h-auto w-auto p-1">
+                    <button class="h-auto w-auto xs:p-1 sm:p-0">
                         <img src="./assets/footer/youtube-logo.png" class="h-auto w-[30px]" />
                     </button>
                 </div>
-                <div class="xs:h-[50px] w-[100vw] grid place-items-center">
+                <div class="xs:h-[50px] xs:w-[100vw] sm:w-[50vw] grid place-items-center">
                     <p class="font-Poppins text-[12px] text-white">© 2016 KingsGreatBuysPlus. All rights reserved.</p>
                 </div>
             </div>
+
         </footer>
     </main>
 
