@@ -125,3 +125,15 @@
     /* height: 59vh;
     width: 100vw; */
 }
+
+.custom-bullet::before {
+    content: "■";
+    /* Unicode character for a square */
+    color: #109DE3;
+    /* Your desired color */
+    display: inline-block;
+    width: 1em;
+    /* Adjust as needed */
+    /* margin-right: 0.em; */
+    /* Adjust spacing */
+}
