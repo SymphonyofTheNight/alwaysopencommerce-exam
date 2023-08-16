@@ -7,7 +7,7 @@ tailwind.config = {
             xl: '1.15rem',
             '1xl': '1.35em',
             '2xl': '1.65em',
-            '3xl': '1.953rem',
+            '3xl': '2.1rem',
             '4xl': '2.441rem',
             '5xl': '3.052rem',
         },

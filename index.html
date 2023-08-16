@@ -14,6 +14,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -143,7 +147,7 @@
                                             need.
                                             Start from as
                                             $00.00</p>
-                                        <button class="bg-[#ff005f] rounded h-[auto] w-[auto]">
+                                        <button class="bg-[#ff005f] xs:h-[5vh] xs:w-[180px] rounded h-[auto] w-[auto]">
                                             <span class="text-white font-Poppins p-2 text-sm">
                                                 SHOP NOW
                                             </span>
@@ -166,7 +170,7 @@
                                         need.
                                         Start from as
                                         $00.00</p>
-                                    <button class="bg-[#ff005f] rounded h-[auto] w-[auto]">
+                                    <button class="bg-[#ff005f] xs:h-[5vh] xs:w-[180px] rounded h-[auto] w-[auto]">
                                         <span class="text-white font-Poppins p-2 text-sm">
                                             SHOP NOW
                                         </span>
@@ -188,7 +192,7 @@
                                         need.
                                         Start from as
                                         $00.00</p>
-                                    <button class="bg-[#ff005f] rounded h-[auto] w-[auto]">
+                                    <button class="bg-[#ff005f] xs:h-[5vh] xs:w-[180px] rounded h-[auto] w-[auto]">
                                         <span class="text-white font-Poppins p-2 text-sm">
                                             SHOP NOW
                                         </span>
@@ -215,6 +219,7 @@
             </div>
         </section>
 
+        <!-- boxes -->
         <section>
             <div
                 class="xs:h-[auto] w-[100vw] flex xs:flex-row flex-wrap items-center justify-center mt-3 mb-5 pt-2 pb-2 gap-3">
@@ -278,17 +283,379 @@
 
         </section>
 
+        <!-- shop by categories -->
         <section>
-
+            <div class="xs:h-[auto] w-[100vw] grid place-items-center mt-3 text-justify break-all pb-3">
+                <h1 class="font-Poppins font-bold xs:text-1xl md:text-3xl p-3">SHOP BY CATEGORIES</h1>
+                <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
+                    <div
+                        class="bg-[#ff005f] xs:h-[2.5px] md:h-[4.5px] xs:w-[70vw] md:w-[14vw] absolute top-[-1px] md:top-[-3px]">
+                    </div>
+                </div>
+                <div
+                    class="xs:h-auto w-[100vw] flex xs:flex-row flex-wrap items-center justify-center pt-3 pb-3 xs:gap-3 md:gap-0">
+                    <button class="xs:h-[200px] xs:w-[205px] grid place-items-center">
+                        <img src="./assets/categories/category_5.png" class="xs:h-[120px]" />
+                    </button>
+                    <button class="xs:h-[200px] xs:w-[205px] grid place-items-center">
+                        <img src="./assets/categories/category_4.png" class="xs:h-[120px]" />
+                    </button>
+                    <button class="xs:h-[200px] xs:w-[205px] grid place-items-center">
+                        <img src="./assets/categories/category_3.png" class="xs:h-[120px]" />
+                    </button>
+                    <button class="xs:h-[200px] xs:w-[205px] grid place-items-center">
+                        <img src="./assets/categories/category_2.png" class="xs:h-[120px]" />
+                    </button>
+                    <button class="xs:h-[200px] xs:w-[205px] grid place-items-center">
+                        <img src="./assets/categories/category_1.png" class="xs:h-[120px]" />
+                    </button>
+                </div>
+            </div>
         </section>
 
-        <footer>
+        <!-- shop new & hot deals products -->
+        <section>
+            <div class="xs:h-[auto] w-[100vw] grid place-items-center mt-3 xs:text-center pb-3">
+                <h1 class="font-Poppins font-bold xs:text-1xl md:text-3xl p-3">SHOP NEW & HOT DEALS PRODUCTS</h1>
+                <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
+                    <div
+                        class="bg-[#ff005f] xs:h-[2.5px] md:h-[4.5px] xs:w-[70vw] md:w-[14vw] absolute top-[-1px] md:top-[-3px]">
+                    </div>
+                </div>
+                <p class="text-black font-Poppins text-[13.5px] pr-5 pl-5 break-all">
+                    Here are our hottest deals from across our entire site - all in one day handy place for you to</p>
+            </div>
+        </section>
 
+        <!-- items -->
+        <section>
+            <div class="h-auto w-[100vw] grid place-items-center mb-3 mt-3">
+                <div class="h-auto w-[80vw] carousel">
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[auto] w-[370px]">
+                        <div
+                            class="group xs:h-[345px] xs:w-[230px] relative items-center justify-center p-2 m-auto transition-all duration-100">
+                            <img src="./assets/items/item-1.jpg" class="h-auto w-full" />
+                            <p class="font-Poppins text-black mt-3 text-sm text-left pr-5">
+                                100% Teak Wood Outdoor Arm Chair Patio Furniture Slated Seat
+                            </p>
+                            <img src="./assets/items/stars.png" class="h-auto w-[80px] mt-3" />
+                            <button
+                                class="border-red-700 border-[2px] h-[40px] relative flex flex-row items-center justify-start w-full mt-3 mb-0">
+                                <span class="font-Poppins text-black/75 text-sm ml-2">
+                                    Price
+                                </span>
+                                <p class="font-bold font-Poppins text-black/75 text-sm ml-1">
+                                    $400.00
+                                </p>
+                                <div class="bg-red-700 h-[40px] w-[70px] grid place-items-center absolute right-0">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                </div>
+                            </button>
+                            <!--group hover-->
+                            <div
+                                class="border-blue-700 border-[2px] hidden h-[345px] w-[230px] absolute top-0 right-0 group-hover:block transition-all duration-100 ">
+                                <button
+                                    class="bg-blue-700 h-[50px] w-[228px] absolute bottom-0 left-0 flex flex-row items-center justify-center">
+                                    <img src="./assets/items/cart.png" class="h-auto w-[20px]" />
+                                    <span class="font-Poppins font-bold text-white text-md ml-2 mt-.5">
+                                        ADD TO CART
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="bg-red-700 h-[auto] w-[100vw] flex justify-start relative ">
+                <button class="prev px-4 py-2 bg-gray-400">Previous</button>
+                <button class="next px-4 py-2 bg-gray-400 absolute right-0">Next</button>
+            </div> -->
+        </section>
+
+        <!-- parallax -->
+        <section>
+            <div class="bg-red-700 xs:h-[40vh] w-[100vw] grid place-items-center mt-5 mb-5 parallax">
+                <div class="border-white/75 border-[2px] xs:h-[35vh] xs:w-[80vw] grid place-items-center">
+                    <div class="border-white/75 border-[1px] xs:h-[33vh] xs:w-[75vw] grid place-items-center">
+                        <div class="bg-white/75 xs:h-[30vh] xs:w-[70vw] grid place-items-center text-justify break-all">
+                            <div class="h-auto w-auto grid place-items-center">
+                                <img src="./assets/parallax/home-decors-text.png" class="h-auto xs:w-[180px]" />
+                                <p class="font-Poppins text-black/75 xs:text-[10px] pr-5 pl-5 mt-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quae ullam,
+                                    quia
+                                    porro, odit repudiandae suscipit tenetur dolor unde adipisci fugiat blanditiis
+                                </p>
+                                <button
+                                    class="bg-[#fca41e] xs:h-[5vh] xs:w-[180px] grid place-items-center rounded mt-2">
+                                    <span class="text-white text-md font-Poppins">SHOP NOW</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- recent tips -->
+        <section>
+            <div class="xs:h-[auto] w-[100vw] grid place-items-center mt-3 text-justify break-all pb-3">
+                <h1 class="font-Poppins font-bold xs:text-1xl md:text-3xl p-3">RECENT TIPS / ARTICLES</h1>
+                <div class="bg-[#109DE3] xs:h-[1px] w-[80vw] relative flex items-start justify-center mb-3">
+                    <div
+                        class="bg-[#ff005f] xs:h-[2.5px] md:h-[4.5px] xs:w-[70vw] md:w-[14vw] absolute top-[-1px] md:top-[-3px]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section>
+            <div class="xs:h-[auto] w-[100vw] flex flex-row flex-wrap items-center justify-center gap-5 pt-2 pb-2 mb-2">
+                <div class="h-[365px] xs:w-[220px] text-left">
+                    <p class=" font-bold font-Poppins text-sm">
+                        Objects collection by Republic of Fritz Hansen
+                    </p>
+                    <img src="./assets/blog/blog-1.jpg" class="h-auto xs:w-[220px] mt-3" />
+                    <p class="font-Poppins text-[0.7rem] mt-2">
+                        Danish brand Republic of Fritz Hansen has become the latest furni-
+                    </p>
+                    <a class="text-[#109DE3] font-Poppins text-sm">
+                        Read More >
+                    </a>
+                </div>
+                <div class="h-[365px] xs:w-[220px] text-left">
+                    <p class=" font-bold font-Poppins text-sm">
+                        Objects collection by Republic of Fritz Hansen
+                    </p>
+                    <img src="./assets/blog/blog-2.jpg" class="h-auto xs:w-[220px] mt-3" />
+                    <p class="font-Poppins text-[0.7rem] mt-2">
+                        Danish brand Republic of Fritz Hansen has become the latest furni-
+                    </p>
+                    <a class="text-[#109DE3] font-Poppins text-sm">
+                        Read More >
+                    </a>
+                </div>
+                <div class="h-[365px] xs:w-[220px] text-left">
+                    <p class=" font-bold font-Poppins text-sm">
+                        Objects collection by Republic of Fritz Hansen
+                    </p>
+                    <img src="./assets/blog/blog-3.jpg" class="h-auto xs:w-[220px] mt-3" />
+                    <p class="font-Poppins text-[0.7rem] mt-2">
+                        Danish brand Republic of Fritz Hansen has become the latest furni-
+                    </p>
+                    <a class="text-[#109DE3] font-Poppins text-sm">
+                        Read More >
+                    </a>
+                </div>
+                <div class="h-[365px] xs:w-[220px] text-left">
+                    <p class=" font-bold font-Poppins text-sm">
+                        Objects collection by Republic of Fritz Hansen
+                    </p>
+                    <img src="./assets/blog/blog-4.jpg" class="h-auto xs:w-[220px] mt-3" />
+                    <p class="font-Poppins text-[0.7rem] mt-2">
+                        Danish brand Republic of Fritz Hansen has become the latest furni-
+                    </p>
+                    <a class="text-[#109DE3] font-Poppins text-sm">
+                        Read More >
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- view article btn -->
+        <section>
+            <div class="xs:h-auto w-[100vw] grid place-items-center mb-2">
+                <button
+                    class="border-[#ff005f] border-[2px] xs:h-[45px] xs:w-[220px] rounded-[50px] grid place-items-center">
+                    <span class="text-black/75 font-Poppins">
+                        View All Articles
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="bg-[#109DE3] h-[100vh] w-[100vw] relative mt-[20vh]">
+            <img src="./assets/footer/footer_roof_logo.png"
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 xs:top-[-30px] left-50 xs:h-[60px]" />
+            <div class="bg-red-700 xs:h-[auto] w-[100vw]">
+
+            </div>
         </footer>
     </main>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
-<script src=" app.js">
+
+<script src="app.js">
 </script>
+<script src="slick.js"></script>
 
 </html>

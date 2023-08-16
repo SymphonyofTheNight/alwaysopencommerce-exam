@@ -116,3 +116,12 @@
     display: grid;
     place-items: center;
 }
+
+.parallax {
+    background-image: url(./assets/parallax/parallax-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 59vh;
+    width: 100vw; */
+}
